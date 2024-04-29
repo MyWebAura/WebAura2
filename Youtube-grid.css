@@ -1,0 +1,485 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    margin-top: 150px;
+    padding-bottom: 35px;
+    row-gap: 30px;
+    column-gap: 25px;
+    margin-left: 90px;
+    margin-right: 50px;
+    border-bottom: 4px solid rgb(105, 105, 105);
+}
+
+.video-preview {}
+
+.thumbnail {
+    cursor: pointer;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    transition: border-radius 0.40s;
+}
+
+video {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    transition: border-radius 0.40s ease-in-out;
+
+}
+
+.thumbnail video:hover {
+    border-radius: 0px;
+}
+
+.thumbnail .image:hover {
+    border-radius: 0px;
+}
+
+.thumbnail-video {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.15s;
+    cursor: pointer;
+}
+
+.thumbnail-video:hover {
+    opacity: 1;
+}
+
+.video-description {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+}
+
+.channel-photo {
+    width: 35px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.description {
+}
+
+.title {
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.video-author {
+    font-size: small;
+    color: gray;
+    line-height: 20px;
+    cursor: pointer;
+    transition: color 0.15s;
+    position: relative;
+    display: inline-block;
+}
+
+.video-author:hover {
+    color: white;
+}
+
+.fa {
+    font-size: 11px;
+}
+
+.video-stats {
+    font-size: small;
+    color: gray;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:700px) {
+    .grid {
+        grid-template-columns: 1fr;
+        margin-left: 50px;
+    }
+
+    .video-preview-7,
+    .video-preview-8 {
+        display: none;
+    }
+}
+
+@media (min-width:701px)and (max-width: 1050px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 50px;
+    }
+
+    .video-preview-7,
+    .video-preview-8 {
+        display: none;
+    }
+    .title{
+      text-overflow: ellipsis;
+    }
+}
+
+@media (min-width:1051px)and (max-width: 1280px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .video-preview-7,
+    .video-preview-8 {
+        display: none;
+    }
+}
+
+@media (min-width:1281px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.second-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    margin-top: 50px;
+    padding-bottom: 35px;
+    row-gap: 30px;
+    column-gap: 25px;
+    margin-left: 90px;
+    margin-right: 50px;
+    
+}
+
+@media (max-width:700px) {
+    .second-grid {
+        grid-template-columns: 1fr;
+        margin-left: 50px;
+    }
+
+    .video-preview-7,
+    .video-preview-8  {
+        display: none;
+    }
+    .loader4{
+        display: none;
+    }
+}
+
+@media (min-width:701px)and (max-width: 1050px) {
+    .second-grid {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 50px;
+    }
+
+    .video-preview-7,
+    .video-preview-8 {
+        display: none;
+    }
+    .loader4{
+        display: none;
+    }
+}
+
+@media (min-width:1051px)and (max-width: 1280px) {
+    .second-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .video-preview-7,
+    .video-preview-8 {
+        display: none;
+    }
+    .loader4{
+        display: none;
+    }
+}
+
+@media (min-width:1281px) {
+    .second-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.loaderr {
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-top: 2px solid black;
+    animation: spin 1s linear infinite;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.loader1 ,
+.loader2 ,
+.loader3 ,
+.loader4 {
+    position: relative; 
+    background-color:rgb(0, 0, 0);
+    overflow: hidden;
+    padding-bottom: 8px;
+
+  }
+.loader1 .imgad , 
+.loader2 .imgad , 
+.loader3 .imgad , 
+.loader4 .imgad{
+    width: 100%;
+    height: 190px;
+    background-color:#75747493; ;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+  .loader1:after ,
+  .loader2:after ,
+  .loader3:after ,
+  .loader4:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(110deg, rgba(227, 227, 227, 0) 0%, rgba(135, 132, 132, 0) 40%, rgba(167, 167, 167, 0.5) 50%, rgba(227, 227, 227, 0) 60%, rgba(227, 227, 227, 0) 100%);
+    animation: gradient-animation_2 1.2s linear infinite;
+  }
+  
+  .loader1 .wrapper ,
+  .loader2 .wrapper ,
+  .loader3 .wrapper ,
+  .loader4 .wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .loader1 .wrapper > div ,
+  .loader2 .wrapper > div ,
+  .loader3 .wrapper > div ,
+  .loader4 .wrapper > div {
+    background-color: #75747493;
+  }
+  
+  .loader1 .circle ,
+  .loader2 .circle ,
+  .loader3 .circle ,
+  .loader4 .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  
+  .loader1 .line-1 ,
+  .loader2 .line-1 ,
+  .loader3 .line-1 ,
+  .loader4 .line-1 {
+    position: absolute;
+    top: 11px;
+    left: 58px;
+    height: 10px;
+    width: 80%;
+  }
+  
+  .loader1 .line-2 ,
+  .loader2 .line-2 ,
+  .loader3 .line-2 ,
+  .loader4 .line-2 {
+    position: absolute;
+    top: 34px;
+    left: 58px;
+    height: 10px;
+    width: 150px;
+  }
+  
+  @keyframes gradient-animation_2 {
+    0% {
+      transform: translate(-100%);
+    }
+  
+    100% {
+      transform: translate(100%);
+    }
+  }  
+
+  
+
+
+  /* Apply basic styling to the preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Set background color or image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999; /* Make sure it's on top of other content */
+}
+
+/* Apply basic styling to the main content */
+
+/* Delay showing content for 6 seconds */
+.content.delayed {
+    animation: showContent 3s ease-in-out 3s ;
+}
+
+@keyframes showContent {
+    to {
+        display: block;
+    }
+}
+
+:root{
+    --box-tech:150px;
+}
+.loader {
+    display: block;
+    position: relative;
+    height: 32px;
+    width: 200px;
+    background: #fff;
+    border: 2px solid #fff;
+    color: rgb(223, 60, 60);
+    overflow: hidden;
+  }
+  
+  .loader::before {
+    content: '';
+    background: rgb(223, 60, 60);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    animation: loading_302 1.9s linear 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .loader:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(0,255,255);
+    mix-blend-mode: difference;
+    animation: percentage_302 1.9s linear 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes loading_302 {
+    0% {
+      width: 0
+    }
+  
+    100% {
+      width: 100%
+    }
+  }
+  
+  @keyframes percentage_302 {
+    0% {
+      content: "0%"
+    }
+  
+    5% {
+      content: "5%"
+    }
+  
+    10% {
+      content: "10%"
+    }
+  
+    20% {
+      content: "20%"
+    }
+  
+    30% {
+      content: "30%"
+    }
+  
+    40% {
+      content: "40%"
+    }
+  
+    50% {
+      content: "50%"
+    }
+  
+    60% {
+      content: "60%"
+    }
+  
+    70% {
+      content: "70%"
+    }
+  
+    80% {
+      content: "80%"
+    }
+  
+    90% {
+      content: "90%"
+    }
+  
+    95% {
+      content: "95%"
+    }
+  
+    96% {
+      content: "96%"
+    }
+  
+    97% {
+      content: "97%"
+    }
+  
+    98% {
+      content: "98%"
+    }
+  
+    99% {
+      content: "99%"
+    }
+  
+    100% {
+      content: "100%"
+    }
+  }
+.ple{
+    width: 140px;
+    margin-bottom: 30px;
+}
+    
+
+
+

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>YouTube</title>
+    <link rel="icon" href="images/youtube.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Youtube-grid.css">
+    <link rel="stylesheet" href="Youtube-shorts.css">
+    <link rel="stylesheet" href="Youtube-tooltps.css">
+    <link rel="stylesheet" href="Youtube-header.css">
+    <link rel="stylesheet" href="Youtube-sidebar.css">
+    <link rel="stylesheet" href="Youtube-general.css">
+    <link rel="stylesheet" href="https://unpkg.com/react-top-loading-bar
+    ">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <img class="ple" src="images/youtube-logo-icon (1).svg" alt="">
+        <div class="loader"></div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="left-section">
+                <img class="ham" src="images/menuew.svg" alt="menue">
+                <div class="header-youtube-logo">
+                    <img class="youtube-header-logo" src="images/youtube-logo-icon (1).svg" alt="Youtube">
+                    <p class="PK">PK</p>
+                </div>
+            </div>
+            <div class="middle-section">
+                <input class="search-box" type="text" placeholder="Search">
+                <button class="magnifying-glass">
+                    <!--  <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <img class="fa-solid" src="images/search-line-icon.svg" alt="">
+                    <div class="tooltip-header">Search</div>
+                </button>
+                <button class="microphone">
+                    <i class="fa-solid fa-microphone"></i>
+                    <div class="tooltip-header">Search with your voice</div>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="three-dots">
+                    <img class="Option" src="images/upload.png" alt="Options">
+                    <div class="tooltip-header">Settings</div>
+                </div>>
+                <button class="sign">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p>Sign-in</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="list">
+            <div><button class="all">All</button></div>
+            <div><button class="live">Music</button></div>
+            <div> <button class="live">Live</button></div>
+            <div> <button class="live">T-Series</button></div>
+            <div> <button class="live">T-Series</button></div>
+            <div><button class="live">Pakistani Daramas</button></div>
+            <div><button class="live">Web Series</button></div>
+            <div> <button class="live">Gaming</button></div>
+            <div><button class="live">News</button></div>
+            <div><button class="live">Jungkook</button></div>
+            <div><button class="live">Kim Taehyung</button></div>
+            <div><button class="live">Shuga</button></div>
+            <div><button class="live">Lisa</button></div>
+            <div><button class="live">BTS</button></div>
+            <div><button class="live">Kdramas</button></div>
+            <div><button class="live">Lee Min Ho</button></div>
+            <div><button class="live">Brent Rivera</button></div>
+            <div><button class="live">Ben Azerlart</button></div>
+            <div><button class="live">Lexi Rivera</button></div>
+            <div><button class="live">Lexi Hensler</button></div>
+            <div><button class="live">Pierson Wadzynski</button></div>
+            <div><button class="live">Thrillers</button></div>
+            <div> <button class="live">Comedy</button></div>
+        </div>
+
+
+        <div class="sidebar">
+            <div class="sidebar-link" title="Home">
+                <i class="fa-solid fa-house"></i>
+                <p class="home">Home</p>
+            </div>
+            <div class="sidebar-link" title="Shorts">
+                <img class="subs-short" src="images/short.svg" alt="Shorts">
+                <p class="home">Shorts</p>
+            </div>
+            <div class="sidebar-link" title="Subscriptions">
+                <img class="subs" src="images/subscription.svg" alt="Subscriptions">
+                <p class="home">Subscriptions</p>
+            </div>
+            <div class="sidebar-link" title="Library">
+                <img class="sub" src="images/library.svg" alt="Library">
+                <p class="home">Library</p>
+            </div>
+            <div class="sidebar-link" title="History">
+                <i class="fa fa-history" aria-hidden="true"></i>
+                <p class="home">History</p>
+            </div>
+        </div>
+        <div class="grid">
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=qX1SXx_44PQ">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/Uncanny.webp">
+                        <p class="tooltip">5:23</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/uncanny.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@netflixkcontent">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Myname.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=qX1SXx_44PQ">
+                            <p class="title">The Uncanny Counter: Season 2 | Official Clip | Netflix [ENG SUB]</p>
+                        </a>
+                        <a href="https://www.youtube.com/@netflixkcontent">
+                            <div class="description-tooltip">
+                                <p class="video-author">Netflix K-content
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">Netflix K-content</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">396K views &middot; 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=Jd_NTQlIfcA">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/roomdecor.webp">
+                        <p class="tooltip">7:32</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/roomdecore.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@byshin">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/roomdecor.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=Jd_NTQlIfcA">
+                            <p class="title">Room makeover Korean style and Pinterest inspired |cozy, minimalist
+                                aesthetic
+                                room
+                            </p>
+                        </a>
+                        <a href="https://www.youtube.com/@byshin">
+                            <div class="description-tooltip">
+                                <p class="video-author">Maria rhi
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">Maria rhi</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">68K views &middot; 1 month ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?app=desktop&v=VmFDNHaVRh0&vl=en">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/kimmiso.webp">
+                        <p class="tooltip">16:09</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/kimmiso.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@tvNDENT">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/kimmiso.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?app=desktop&v=VmFDNHaVRh0&vl=en">
+                            <p class="title">(ENG/IND)[#What'sWrongwithSecretaryKim]Best Moments of VC ♥ Secretary |</p>
+                        </a>
+                        <a href="https://www.youtube.com/@tvNDENT">
+                            <div class="description-tooltip">
+                                <p class="video-author">tvN D ENT
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">tvN D ENT</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">4.6 views &middot; 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=0x8cJUD6MMo">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/nevertheless.webp">
+                        <p class="tooltip">0:52</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/Nevertheless, _ Official Trailer _ Netflix.mp4" loop
+                                onmouseover="this.play();" onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@NetflixAsia">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Netflix.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=0x8cJUD6MMo">
+                            <p class="title">Nevertheless, | Official Trailer | Netflix</p>
+                        </a>
+                        <a href="https://www.youtube.com/@NetflixAsia">
+                            <div class="description-tooltip">
+                                <p class="video-author">Netflix Asia
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">Netflix Asia</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">1.1M views &middot; 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=ZOl7iOrD31Q">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/Myname.webp">
+                        <p class="tooltip">1:53</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/My Name _ Official Trailer _ Netflix [ENG SUB].mp4" loop
+                                onmouseover="this.play();" onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@netflixkcontent">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Myname.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=ZOl7iOrD31Q">
+                            <p class="title">My Name | Official Trailer | Netflix [ENG SUB]</p>
+                        </a>
+                        <a href="https://www.youtube.com/@netflixkcontent">
+                            <div class="description-tooltip">
+                                <p class="video-author">Netflix K-content
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">Netflix K-content</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">3.6M views &middot; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=nlRw1CGbFU0">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/alchemyofsouls.webp">
+                        <p class="tooltip">0:50</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/Alchemy of Souls _ Official Trailer _ Netflix.mp4" loop
+                                onmouseover="this.play();" onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@NetflixAsia">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Netflix.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=nlRw1CGbFU0">
+                            <p class="title">Alchemy of Souls | Official Trailer | Netflix</p>
+                        </a>
+                        <a href="https://www.youtube.com/@NetflixAsia">
+                            <div class="description-tooltip">
+                                <p class="video-author">Netflix Asia
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">Netflix Asia</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">123K views &middot; 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview-7">
+                <a href="https://www.youtube.com/watch?v=eXMjTXL2Vks">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/crash.webp">
+                        <p class="tooltip">0:41</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/crash.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@netflixkcontent">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Myname.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=eXMjTXL2Vks">
+                            <p class="title">Crash Landing on You | Official Trailer #1 | Netflix [ENG SUB]</p>
+                        </a>
+                        <a href="https://www.youtube.com/@netflixkcontent">
+                            <div class="description-tooltip">
+                                <p class="video-author">Netflix K-content
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">Netflix K-content</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">3.3M views &middot; 3 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview-8">
+                <a href="https://www.youtube.com/watch?v=LKowZAzC184">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/All.webp">
+                        <p class="tooltip">1:07</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/All.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@TheFilmBee.">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/All.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=LKowZAzC184">
+                            <p class="title">All Of Us Are Dead Season 2 Trailer | Who Survived?!| Netflix | The Film
+                                Bee
+                                Concept Version</p>
+                        </a>
+                        <a href="https://www.youtube.com/@TheFilmBee.">
+                            <div class="description-tooltip">
+                                <p class="video-author">The Film Bae
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">The Film Bae</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">2.9M views &middot; 1 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="showmore-button">
+            <div class="short-logo">
+                <img class="short-logo-youtube" src="youtube-shorts-logo.png" alt="YouTube shorts">
+                <p class="short-logo-text">Shorts</p>
+            </div>
+            <div class="Youtube-shorts">
+                <div class="shorts-preview">
+                    <a href="https://www.youtube.com/shorts/EpnSrSOpY2M">
+                        <div class="short-thumbnail-1">
+                            <img class="shorts-image" src="Shorts-Thumbnail/short1.webp" alt="This video is unvailable">
+                            <div class="short-video">
+                                <video muted class="short-youtube" src="youtube-shorts-video/short1.mp4" loop
+                                    onmouseover="this.play();" onmouseout="this.pause();"></video>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="shorts-title-1">
+                        <a href="https://www.youtube.com/shorts/EpnSrSOpY2M">
+                            <p class="shorts-text">Soulmates met in another universe</p>
+                        </a>
+                        <p class="shorts-stats">616K views</p>
+                    </div>
+                </div>
+
+                <div class="shorts-preview">
+                    <a href="https://www.youtube.com/shorts/nFcla1U6HME">
+                        <div class="short-thumbnail-2">
+                            <img class="shorts-image" src="Shorts-Thumbnail/short2.webp" alt="This video is unvailable">
+                            <div class="short-video">
+                                <video muted class="short-youtube" src="youtube-shorts-video/short2.mp4" loop
+                                    onmouseover="this.play();" onmouseout="this.pause();"></video>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="shorts-title-2">
+                        <a href="https://www.youtube.com/shorts/nFcla1U6HME">
+                            <p class="shorts-text">This part of Felix is my favorite part</p>
+                        </a>
+                        <p class="shorts-stats">816K views</p>
+                    </div>
+                </div>
+                <div class="shorts-preview">
+                    <a href="https://www.youtube.com/shorts/ramwlkWW9rY">
+                        <div class="short-thumbnail-3">
+                            <img class="shorts-image" src="Shorts-Thumbnail/short3.webp" alt="This video is unvailable">
+                            <div class="short-video">
+                                <video muted class="short-youtube" src="youtube-shorts-video/shorts3.mp4" loop
+                                    onmouseover="this.play();" onmouseout="this.pause();"></video>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="shorts-title-3">
+                        <a href="https://www.youtube.com/shorts/ramwlkWW9rY">
+                            <p class="shorts-text">Men in suits and Women in suits </p>
+                        </a>
+                        <p class="shorts-stats">716K views</p>
+                    </div>
+                </div>
+                <div class="shorts-preview">
+                    <a href="https://www.youtube.com/shorts/8NX_LZ0msXA">
+                        <div class="short-thumbnail-4">
+                            <img class="shorts-image" src="Shorts-Thumbnail/short4.webp" alt="This video is unvailable">
+                            <div class="short-video">
+                                <video muted class="short-youtube" src="youtube-shorts-video/short4.mp4" loop
+                                    onmouseover="this.play();" onmouseout="this.pause();"></video>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="shorts-title-4">
+                        <a href="https://www.youtube.com/shorts/8NX_LZ0msXA">
+                            <p class="shorts-text">Working with tall actors problem</p>
+                        </a>
+                        <p class="shorts-stats">2.8M views</p>
+                    </div>
+                </div>
+                <div class="shorts-preview">
+                    <a href="https://www.youtube.com/shorts/sNR0655-R4M">
+                        <div class="short-thumbnail-5">
+                            <img class="shorts-image" src="Shorts-Thumbnail/tret.jpg_large"
+                                alt="This video is unvailable">
+                            <div class="short-video">
+                                <video muted class="short-youtube" src="youtube-shorts-video/short5.mp4" loop
+                                    onmouseover="this.play();" onmouseout="this.pause();"></video>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="shorts-title-5">
+                        <a href="https://www.youtube.com/shorts/sNR0655-R4M">
+                            <p class="shorts-text">His reaction nobody can win against</p>
+                        </a>
+                        <p class="shorts-stats">687K views</p>
+                    </div>
+                </div>
+
+                <div class="shorts-preview">
+                    <a href="https://www.youtube.com/shorts/Ciy8nEjAubo">
+                        <div class="short-thumbnail-6">
+                            <img class="shorts-image" src="Shorts-Thumbnail/short6.webp" alt="This video is unvailable">
+                            <div class="short-video">
+                                <video muted class="short-youtube" src="youtube-shorts-video/short6.mp4" loop
+                                    onmouseover="this.play();" onmouseout="this.pause();"></video>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="shorts-title-6">
+                        <a href="https://www.youtube.com/shorts/Ciy8nEjAubo">
+                            <p class="shorts-text">Cha Eun Wo &amp; Kim Sejeong Commercial </p>
+                        </a>
+                        <p class="shorts-stats">3.1M views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="showmore">
+                <i class="fa-solid fa-chevron-down"></i>
+                <p class="show-tooltips">Show more</p>
+            </div>
+        </div>
+
+        <div class="second-grid">
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=CWmslc9dlUA">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/Ghost.webp">
+                        <p class="tooltip">3:06</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/Ghost.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@alexisweng">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Ghost.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=CWmslc9dlUA">
+                            <p class="title">Justin Bieber - Ghost (cover)</p>
+                        </a>
+                        <a href="https://www.youtube.com/@alexisweng">
+                            <div class="description-tooltip">
+                                <p class="video-author">alexis wang
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">alexis wang</div>
+
+                            </div>
+                        </a>
+                        <p class="video-stats">2.4M views &middot; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=xGKTGzePru8">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/Still.webp">
+                        <p class="tooltip">4:21</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/Still.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@bts_butterfly_">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Still.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=xGKTGzePru8">
+                            <p class="title">Jungkook - "Still With You " [FMV]</p>
+                        </a>
+                        <a href=""></a>
+                        <a href="https://www.youtube.com/@bts_butterfly_">
+                            <div class="description-tooltip">
+                                <p class="video-author">Butterfly
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">Butterfly</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">12K views &middot; 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=H48H0GNRCkI">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/Oerfect.webp">
+                        <p class="tooltip">4:24</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/Perfect.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@LoveLifeLyrics">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/perfect.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=H48H0GNRCkI">
+                            <p class="title">Ed Sheeran - Perfect (Lyric Video)</p>
+                        </a>
+                        <a href="https://www.youtube.com/@LoveLifeLyrics">
+                            <div class="description-tooltip">
+                                <p class="video-author">tvN D ENT
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">tvN D ENT</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">4.6 views &middot; 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=ixUCnNA2WwU">
+                    <div class="thumbnail">
+
+                        <img class="image" src="Thumbnails/hq720.webp">
+
+                        <p class="tooltip">1:05:47</p>
+                        <div class="thumbnail-video">
+                            <video muted
+                                src="thumbnail-videos/[Explicit Ver.] Jungkook (정국) - Seven (Feat. Latto) (1 HOUR LOOP) Lyrics _ 1시간 가사.mp4"
+                                loop onmouseover="this.play();" onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@1Hour_Kpop">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Seven.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=ixUCnNA2WwU">
+                            <p class="title">[Explicit Ver.] Jungkook (정국) - Seven (Feat. Latto) (1 HOUR LOOP) Lyrics |
+                                1시간
+                                가사
+                            </p>
+                        </a>
+                        <a href="https://www.youtube.com/@1Hour_Kpop">
+                            <div class="description-tooltip">
+                                <p class="video-author">1 Hour
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">1 Hour</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">778K views &middot; 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=eXMjTXL2Vks">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/crash.webp">
+                        <p class="tooltip">0:41</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/crash.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@netflixkcontent">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Myname.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=eXMjTXL2Vks">
+                            <p class="title">Crash Landing on You | Official Trailer #1 | Netflix [ENG SUB]</p>
+                        </a>
+                        <a href="https://www.youtube.com/@netflixkcontent">
+                            <div class="description-tooltip">
+                                <p class="video-author">Netflix K-content
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">Netflix K-content</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">3.3M views &middot; 3 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <a href="https://www.youtube.com/watch?v=LKowZAzC184">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/All.webp">
+                        <p class="tooltip">1:07</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/All.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@TheFilmBee.">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/All.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=LKowZAzC184">
+                            <p class="title">All Of Us Are Dead Season 2 Trailer | Who Survived?!| Netflix | The Film
+                                Bee
+                                Concept Version</p>
+                        </a>
+                        <a href="https://www.youtube.com/@TheFilmBee.">
+                            <div class="description-tooltip">
+                                <p class="video-author">The Film Bae
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">The Film Bae</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">2.9M views &middot; 1 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview-8">
+                <a href="https://www.youtube.com/watch?v=qX1SXx_44PQ">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/Uncanny.webp">
+                        <p class="tooltip">5:23</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/uncanny.mp4" loop onmouseover="this.play();"
+                                onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@netflixkcontent">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Myname.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=qX1SXx_44PQ">
+                            <p class="title">The Uncanny Counter: Season 2 | Official Clip | Netflix [ENG SUB]</p>
+                        </a>
+                        <a href="https://www.youtube.com/@netflixkcontent">
+                            <div class="description-tooltip">
+                                <p class="video-author">Netflix K-content
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">Netflix K-content</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">396K views &middot; 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="video-preview-8">
+                <a href="https://www.youtube.com/watch?v=0x8cJUD6MMo">
+                    <div class="thumbnail">
+                        <img class="image" src="Thumbnails/nevertheless.webp">
+                        <p class="tooltip">0:52</p>
+                        <div class="thumbnail-video">
+                            <video muted src="thumbnail-videos/Nevertheless, _ Official Trailer _ Netflix.mp4" loop
+                                onmouseover="this.play();" onmouseout="this.pause();"></video>
+                        </div>
+                    </div>
+                </a>
+                <div class="video-description">
+                    <a href="https://www.youtube.com/@NetflixAsia">
+                        <div class="channel">
+                            <img class="channel-photo" src="Channel/Netflix.jpeg">
+                        </div>
+                    </a>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=0x8cJUD6MMo">
+                            <p class="title">Nevertheless, | Official Trailer | Netflix</p>
+                        </a>
+                        <a href="https://www.youtube.com/@NetflixAsia">
+                            <div class="description-tooltip">
+                                <p class="video-author">Netflix Asia
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </p>
+                                <div class="tooltips">Netflix Asia</div>
+                            </div>
+                        </a>
+                        <p class="video-stats">1.1M views &middot; 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="loader1">
+                <div class="imgad"></div>
+                <div class="wrapper">
+                    <div class="circle"></div>
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                </div>
+            </div>
+            <div class="loader2">
+                <div class="imgad"></div>
+                <div class="wrapper">
+                    <div class="circle"></div>
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                </div>
+            </div>
+            <div class="loader3">
+                <div class="imgad"></div>
+                <div class="wrapper">
+                    <div class="circle"></div>
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                </div>
+            </div>
+            <div class="loader4">
+                <div class="imgad"></div>
+                <div class="wrapper">
+                    <div class="circle"></div>
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="loaderr"></div>
+
+
+        <div class="container">
+            <div class="listter">
+                <div class="camerama"></div>
+            </div>
+        </div>
+        </div2>
+        <script>
+            // JavaScript to remove preloader after 6-second delay
+            window.addEventListener('load', () => {
+                const preloader = document.querySelector('.preloader');
+                const content = document.querySelector('.content');
+
+                // Show content after 6 seconds
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                    content.classList.add('delayed');
+                }, 2300); // 6 seconds in milliseconds
+            });
+
+
+        </script>
+</body>
+
+</html>
