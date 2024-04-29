@@ -1,0 +1,15 @@
+<svg width="110" height="132.88" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1">
+ <defs>
+  <filter id="svg_2_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g fill="#F40407" id="svg_1">
+   <path stroke-width="9" stroke="#ffffff" filter="url(#svg_2_blur)" id="svg_2" fill="none" clip-rule="evenodd" fill-rule="evenodd" d="m69.02403,7.39081c11.59,-6.04 25.94,-1.64 32.04,9.83c6.1,11.47 1.65,25.66 -9.94,31.7l-9.53,5.01c8.21,0.3 16.04,4.81 20.14,12.52c6.1,11.47 1.66,25.66 -9.94,31.7l-50.82,26.7c-11.59,6.04 -25.94,1.64 -32.04,-9.83c-6.1,-11.47 -1.65,-25.66 9.94,-31.7l9.53,-5.01c-8.21,-0.3 -16.04,-4.81 -20.14,-12.52c-6.1,-11.47 -1.65,-25.66 9.94,-31.7l50.82,-26.7l0,0z" class="st0"/>
+  </g>
+  <path transform="rotate(90 155.036 58.551)" id="svg_3" d="m139.50375,75.14657l15.53178,-33.19121l15.53178,33.19121l-31.06356,0z" stroke="#ffffff" fill="#ffffff"/>
+  <path transform="rotate(90 57.547 67.2105)" stroke="#ffffff" id="svg_4" d="m47.54709,75.9338l9.99992,-17.44666l9.99992,17.44666l-19.99983,0z" stroke-width="5" fill="#ffffff"/>
+ </g>
+</svg>
