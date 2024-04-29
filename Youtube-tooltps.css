@@ -1,0 +1,64 @@
+.tooltip{
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    background-color: black;
+    bottom: 18px;
+    right: 8px;
+    padding: 4px 7px 4px 7px ;
+    border-radius: 7px;
+}
+.description-tooltip{
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+}
+.description-tooltip .tooltips{
+    position: absolute;
+    color: white;
+    font-family: 'Roboto' , Arial;
+    background-color: rgba(103, 103, 103, 0.784);
+    font-size: small;
+    top: -45px;
+    border-radius: 3px;
+    padding: 7px 11px 7px 11px; 
+    opacity: 0;
+    pointer-events: none;
+}
+
+.description-tooltip:hover .tooltips{
+    opacity: 1;
+}
+.showmore .show-tooltips{
+    position: absolute;
+    color: white;
+    font-family: 'Roboto' , Arial;
+    background-color: rgba(103, 103, 103, 0.784);
+    font-size: small;
+    bottom: -55px;
+    border-radius: 3px;
+    padding: 11px 7px 11px 7px; 
+    opacity: 0;
+    pointer-events: none;
+}
+
+.showmore:hover .show-tooltips{
+    opacity: 1;
+}
+.tooltip-header{
+    color: white;
+    position: absolute;
+    background-color: rgba(103, 103, 103, 0.784);
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+    bottom: -50px;
+    font-size: 11px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+.magnifying-glass:hover .tooltip-header ,
+.microphone:hover .tooltip-header ,   
+.three-dots:hover .tooltip-header    {
+    opacity: 1;   
+}
